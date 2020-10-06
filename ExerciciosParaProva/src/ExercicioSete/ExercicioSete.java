@@ -47,7 +47,6 @@ public class ExercicioSete extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		contentPane.setVisible(false);
 		contentPane.setLayout(null);
 		texto1 = new JTextField();
 		texto1.addActionListener(new ActionListener() {
