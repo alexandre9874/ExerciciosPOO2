@@ -20,6 +20,7 @@ public class ExercicioSete extends JFrame {
 	private JPanel contentPane;
 	private JTextField texto1;
 	private JTextField texto2;
+	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -46,8 +47,8 @@ public class ExercicioSete extends JFrame {
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
+		contentPane.setVisible(false);
 		contentPane.setLayout(null);
-		
 		texto1 = new JTextField();
 		texto1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -85,5 +86,11 @@ public class ExercicioSete extends JFrame {
 		JLabel lblNewJgoodiesTitle_1 = DefaultComponentFactory.getInstance().createTitle("Texto 2");
 		lblNewJgoodiesTitle_1.setBounds(43, 45, 59, 14);
 		contentPane.add(lblNewJgoodiesTitle_1);
+		
+		textField = new JTextField();
+		textField.setBounds(126, 73, 86, 20);
+		contentPane.add(textField);
+		
+		textField.setColumns(10);
 	}
 }
